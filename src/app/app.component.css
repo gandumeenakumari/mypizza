@@ -1,0 +1,16 @@
+.navbar{
+    background-color:white#ffff;
+}
+.navbar-light .navbar-nav .nav-link
+{
+    color: black;
+    font-size: 18px;
+}
+.navbar-nav
+{
+    list-style-type:none;
+}
+.navbar-nav .nav-link{
+    padding: 12px;
+}
+

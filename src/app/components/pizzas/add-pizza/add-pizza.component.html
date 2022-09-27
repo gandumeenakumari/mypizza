@@ -1,0 +1,25 @@
+<div class="container" my-5>
+<h1 class="mb-3">Add new Pizza</h1>
+<div class="row">
+    <div class="col-6">
+        <form #form="ngForm" (ngSubmit)="addPizzaRequest">
+            <div class="mb-3">
+              <label  class="form-label">Pizza Name</label>
+              <input type="text" class="form-control" pizzaid="name" 
+              name="name" [(ngModel)]="addPizzaRequest.name">
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Pizza Category</label>
+                <input type="text" class="form-control" id="category"
+                name="category" [(ngModel)]="addPizzaRequest.category">
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">price</label>
+                <input type="text" class="form-control" id="price" 
+                name="price" [(ngModel)]="addPizzaRequest.price">
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</div>
+</div>

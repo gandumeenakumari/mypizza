@@ -1,0 +1,16 @@
+
+<section class="show pizza">
+    <div class="container">
+        <h1 class="text-center">All Pizzas</h1>
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let cs of show">
+                <div class="box">
+                    <img src="{{cs.image}}"width="100%">
+                    <h4>{{cs.description}}</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
