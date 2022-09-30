@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Pizza } from 'src/app/models/pizza.model';
 import { PizzasService } from 'src/app/services/pizzas.service';
 
@@ -15,11 +16,9 @@ export class AddPizzaComponent implements OnInit {
     category:'',
     price:0
   };
-  constructor(private pizzasService:PizzasService) {
 
-   }
-
-
+  constructor(private route:ActivatedRoute,private pizzasService:PizzasService,private router:Router) {
+}
   ngOnInit(): void {
   }
   addPizza()
@@ -28,7 +27,9 @@ export class AddPizzaComponent implements OnInit {
     .subscribe({
       next:(Pizza)=>
       {
-        console.log(Pizza);
+        console.log("add item method called");
+        this.router.navigate(['Pizzas']);
+
       }
     })
   }

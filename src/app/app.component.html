@@ -9,7 +9,7 @@
 </ul>
 
 <div class="container">
-    <a class="navbar-brand" routerLink=" ">Pizza Shop</a>
+    <a class="navbar-brand" routerLink=" ">It's Pizza O'Clock!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,51 +19,39 @@
           <a class="nav-link active" aria-current="page" routerLink=" ">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="Pizzas">Pizzas</a>
+          <a class="nav-link active" aria-current="page" routerLink="menu">Menu</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categories
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" aria-current="page" routerLink="category-list/vegetarian">Vegetarian</a></li>
-            <li><a class="dropdown-item " aria-current="page" routerLink="#">Non Vegetarian</a></li>  
-          </ul>
-        </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Orders</a>
+          <a class="nav-link active" aria-current="page" routerLink="Orders">Orders</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Reviews</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">My cart</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          My Profile
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item " aria-current="page" routerLink="pizzas/add">Add to Cart</a></li> 
+            <li><a class="dropdown-item " aria-current="page" routerLink="cart">My Orders</a></li>  
+            <li><a class="dropdown-item " aria-current="page" routerLink="cart">Reviews</a></li>  
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Login</a>
+          <a class="nav-link active" aria-current="page" routerLink="cart">Cart</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="Login">Login</a>
-        </li>
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pizza Store
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item " aria-current="page" routerLink="pizzas/add">Add Pizza</a></li>  
-          </ul>
+          <a class="nav-link active" aria-current="page" routerLink="login">Login</a>
         </li>
       </ul>
     </div>
   </div>
 
 </nav>
-
+<app-footer></app-footer>
 <router-outlet></router-outlet>

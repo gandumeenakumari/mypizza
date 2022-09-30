@@ -11,8 +11,11 @@ import { AddPizzaComponent } from './components/pizzas/add-pizza/add-pizza.compo
 import { ViewPizzaComponent } from './components/view-pizza/view-pizza.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import { ShowPizzaComponent } from './components/pizzas/show-pizza/show-pizza.component';
-import { VegetarianComponent } from './components/category-list/vegetarian/vegetarian.component';
 import { LoginComponent } from './components/login/login.component';
+import { orderComponent } from './components/order/order.component';
+import { CartComponent } from './components/cart/cart.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +26,11 @@ import { LoginComponent } from './components/login/login.component';
     ViewPizzaComponent,
     CategoryListComponent,
     ShowPizzaComponent,
-    VegetarianComponent,
-    LoginComponent
+    LoginComponent,
+    orderComponent,
+    CartComponent,
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { OrderDetailsService } from 'src/app/services/order-details.service';
 
 @Component({
-  selector: 'app-vegetarian',
-  templateUrl: './vegetarian.component.html',
-  styleUrls: ['./vegetarian.component.css']
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css']
 })
-export class VegetarianComponent implements OnInit {
+export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:OrderDetailsService) { }
 
   ngOnInit(): void {
   }
-  vegetarian=[
+  menu=[
     {'id':2,'name':'Mushroom Pepper','description':'₹200','image':'/assets/img/mushroom_pepper.jpg'},
     {'id':1,'name':'Margarita','description':'₹300','image':'/assets/img/margarita.jpg'},
     {'id':3,'name':'Tomato Onion','description':'₹200','image':'/assets/img/tomato_onion.jpg'},
