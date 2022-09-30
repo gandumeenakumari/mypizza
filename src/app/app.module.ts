@@ -13,6 +13,10 @@ import { CategoryListComponent } from './components/category-list/category-list.
 import { ShowPizzaComponent } from './components/pizzas/show-pizza/show-pizza.component';
 import { VegetarianComponent } from './components/category-list/vegetarian/vegetarian.component';
 import { LoginComponent } from './components/login/login.component';
+import { orderComponent } from './components/order/order.component';
+import { CartComponent } from './components/cart/cart.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { LoginComponent } from './components/login/login.component';
     CategoryListComponent,
     ShowPizzaComponent,
     VegetarianComponent,
-    LoginComponent
+    LoginComponent,
+    orderComponent,
+    CartComponent,
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

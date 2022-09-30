@@ -3,23 +3,22 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Orders } from '../models/order.model';
-import { Pizza } from '../models/pizza.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PizzasService {
+export class ordersService {
 
   baseApiUrl:string=environment.baseApiUrl;
   constructor(private http:HttpClient) { }
   
-  getAllPizzas():Observable<Pizza[]>
+  addOrders(addOrderRequest:Orders):Observable<Orders>
   {
-    return this.http.get<Pizza[]>(this.baseApiUrl+'/api/Pizza');
+    addOrderRequest.orderid='00000000-0000-0000-0000-000000000000';
+    return this.http.post<Orders>(this.baseApiUrl+'/api/Orders',addOrderRequest);
   }
-  addPizza(addPizzaRequest:Pizza):Observable<Pizza>
+  getAllOrders():Observable<Orders[]>
   {
-    addPizzaRequest.pizzaid='00000000-0000-0000-0000-000000000000';
-    return this.http.post<Pizza>(this.baseApiUrl+'/api/Pizza',addPizzaRequest);
+    return this.http.get<Orders[]>(this.baseApiUrl+'/api/Orders');
   }
 }
