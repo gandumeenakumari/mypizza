@@ -15,6 +15,7 @@
             <td>{{Pizza.name}}</td>
             <td>{{Pizza.category}}</td>
             <td>{{Pizza.price}}</td>
+            <td><a [routerLink]="['/Pizzas','edit',Pizza.pizzaid]">View</a></td>
         </tr>
     </tbody>
     </table>

@@ -14,8 +14,6 @@ import { ShowPizzaComponent } from './components/pizzas/show-pizza/show-pizza.co
 import { LoginComponent } from './components/login/login.component';
 import { orderComponent } from './components/order/order.component';
 import { CartComponent } from './components/cart/cart.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +27,6 @@ import { MenuComponent } from './components/menu/menu.component';
     LoginComponent,
     orderComponent,
     CartComponent,
-    FooterComponent,
-    MenuComponent
   ],
   imports: [
     BrowserModule,
