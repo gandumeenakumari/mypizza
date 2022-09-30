@@ -17,7 +17,6 @@ Pizza:Pizza []=[];
   constructor(private route:ActivatedRoute,private OrderDetailsService:OrderDetailsService,private router:Router) { }
 
   ngOnInit(): void {
-    this.foodData=this.service.pizzaDetails;
     this.OrderDetailsService.getAllPizzas()
     .subscribe({
       next:(Pizza: Pizza[])=>
@@ -31,16 +30,7 @@ Pizza:Pizza []=[];
     })
 
     
-  }
-foodData=[
-    {'id':1,
-    'pizzaname':'Mushroom',
-    'pizzaDetails':'Mushroom Pepper pizza',
-    'price':200,
-    'pizzaImg':'/assets/img/mushroom_pepper.jpg'
-    }
-  
-  ]  
+  } 
   }
 
 

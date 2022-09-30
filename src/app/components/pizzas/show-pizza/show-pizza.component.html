@@ -7,6 +7,8 @@
                 <div class="box">
                     <img src="{{cs.image}}"width="100%">
                     <h4>{{cs.description}}</h4>
+                    <p>{{cs.p  | currency:'INR'}}</p>
+                    <a class="buybtn" [routerLink]="['/Orders']">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
                 </div>
             </div>
         </div>

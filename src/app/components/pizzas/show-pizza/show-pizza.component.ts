@@ -12,15 +12,14 @@ export class ShowPizzaComponent implements OnInit {
   ngOnInit(): void {
   }
   show=[
-    {'id':1,'description':'Grilled Chicken','image':'/assets/img/grilled_chicken.jpg'},
-    {'id':2,'description':'Hawaiian','image':'/assets/img/Hawaiian_pizza_1.jpg'},
-    {'id':3,'description':'Flying jacob','image':'/assets/img/flying_jacob.jpg'},
-    {'id':4,'description':'Kentucky','image':'/assets/img/kentucky.jpg'},
-    {'id':5,'description':'Pescatore','image':'/assets/img/pescatore.jpg'},
-    {'id':6,'description':'Capricciosa','image':'/assets/img/Pizza_capricciosa.jpg'},
-    {'id':7,'description':'Barcelona','image':'/assets/img/barcelona.jpg'},
-    {'id':8,'description':'Vegetarian pizza','image':'/assets/img/Vegetarian_pizza.jpg'},
-    {'id':9,'description':'La Carne','image':'/assets/img/la_carne.jpg'},
-    {'id':10,'description':'Capricciosa pizza','image':'/assets/img/Pizza_capricciosa.jpg'},
+    {'id':1,'description':'Grilled Chicken','p':300,'image':'/assets/img/grilled_chicken.jpg'},
+    {'id':2,'description':'Hawaiian','p':400,'image':'/assets/img/Hawaiian_pizza_1.jpg'},
+    {'id':3,'description':'Flying jacob','p':200,'image':'/assets/img/flying_jacob.jpg'},
+    {'id':4,'description':'Kentucky','p':300,'image':'/assets/img/kentucky.jpg'},
+    {'id':5,'description':'Pescatore','p':250,'image':'/assets/img/pescatore.jpg'},
+    {'id':6,'description':'Barcelona','p':250,'image':'/assets/img/barcelona.jpg'},
+    {'id':7,'description':'Vegetarian pizza','p':300,'image':'/assets/img/Vegetarian_pizza.jpg'},
+    {'id':8,'description':'La Carne','p':300,'image':'/assets/img/la_carne.jpg'},
+    {'id':9,'description':'Capricciosa pizza','p':280,'image':'/assets/img/Pizza_capricciosa.jpg'},
   ]
 }
